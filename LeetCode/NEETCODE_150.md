@@ -12,7 +12,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 ### 📂 Arrays & Hashing
 - [ ] Contains Duplicate
 - [ ] Valid Anagram
-- [x] [Two Sum](./JavaScript/Easy/1. Two Sum/)
+- [x] [Two Sum](./Python/Easy/1. Two Sum/)
 - [ ] Group Anagrams
 - [ ] Top K Frequent Elements
 - [ ] Product of Array Except Self

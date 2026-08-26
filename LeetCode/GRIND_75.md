@@ -10,7 +10,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 ## Checklist
 
 ### 📂 Array
-- [x] [Two Sum](./JavaScript/Easy/1. Two Sum/)
+- [x] [Two Sum](./Python/Easy/1. Two Sum/)
 - [ ] Best Time to Buy and Sell Stock
 - [ ] Contains Duplicate
 - [ ] Product of Array Except Self
