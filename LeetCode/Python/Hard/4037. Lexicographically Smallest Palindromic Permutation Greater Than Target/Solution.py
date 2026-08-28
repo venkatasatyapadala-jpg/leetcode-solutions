@@ -7,7 +7,7 @@ class Solution:
         for ch in s:
             cnt[ord(ch) - ord('a')] += 1
 
-        # Check whether a palindrome is possible
+        # A palindrome can have at most one odd count
         odd = 0
         middle = ""
 
@@ -19,100 +19,84 @@ class Solution:
         if odd > 1:
             return ""
 
+        # For a palindrome, first half contains count // 2
+        half_cnt = [x // 2 for x in cnt]
         half_len = n // 2
 
-        # Characters available for first half
-        half_cnt = [x // 2 for x in cnt]
-
-        def build(half):
-            # First half + middle + reverse(first half)
+        def make_palindrome(half):
             return half + middle + half[::-1]
 
-        # Try to match target's first half
-        prefix = []
+        # Build the smallest possible half
+        half = []
+        for i in range(26):
+            half.extend([chr(ord('a') + i)] * half_cnt[i])
+
+        half = ''.join(half)
+
+        # If the smallest palindrome is already greater
+        candidate = make_palindrome(half)
+        if candidate > target:
+            return candidate
+
+        # We need the smallest half whose palindrome > target.
+        # Since palindrome comparison is determined by the first half,
+        # find the next permutation of half that is > target's first half.
+
+        target_half = target[:half_len]
+
+        # We need a half >= target_half.
+        # Try to construct the smallest half greater than target_half.
+
         remaining = half_cnt[:]
+        prefix = []
 
-        for i in range(half_len):
-            c = ord(target[i]) - ord('a')
+        # Match target_half as long as possible
+        for ch in target_half:
+            x = ord(ch) - ord('a')
 
-            if remaining[c] > 0:
-                prefix.append(target[i])
-                remaining[c] -= 1
+            if remaining[x] > 0:
+                prefix.append(ch)
+                remaining[x] -= 1
             else:
                 break
 
-        # If complete first half matches target's first half,
-        # check the resulting palindrome.
+        # If we matched the whole target half,
+        # the exact half may still produce a palindrome <= target.
         if len(prefix) == half_len:
-            half = ''.join(prefix)
-            candidate = build(half)
+            candidate = make_palindrome(''.join(prefix))
 
             if candidate > target:
                 return candidate
 
-        # Try changing a position from right to left.
-        cur = prefix[:]
-        rem = remaining[:]
+        # Backtrack from the last matched position.
+        for pos in range(len(prefix) - 1, -1, -1):
 
-        pos = len(cur) - 1
+            # Return the character used at this position
+            old = ord(prefix[pos]) - ord('a')
+            remaining[old] += 1
 
-        while pos >= 0:
-            current = ord(cur[pos]) - ord('a')
+            # Try the smallest character greater than it
+            for c in range(old + 1, 26):
 
-            # Put this character back
-            rem[current] += 1
-
-            # Try the smallest character greater than current
-            for c in range(current + 1, 26):
-                if rem[c] == 0:
+                if remaining[c] == 0:
                     continue
 
-                half = ''.join(cur[:pos])
-                half += chr(ord('a') + c)
+                new_half = prefix[:pos] + [chr(ord('a') + c)]
 
-                rem[c] -= 1
+                remaining[c] -= 1
 
-                # Fill remaining positions with smallest characters
+                # Append all remaining characters in sorted order
                 for x in range(26):
-                    half += chr(ord('a') + x) * rem[x]
+                    new_half.extend(
+                        [chr(ord('a') + x)] * remaining[x]
+                    )
 
-                candidate = build(half)
+                half_string = ''.join(new_half)
+                candidate = make_palindrome(half_string)
 
                 if candidate > target:
                     return candidate
 
-                rem[c] += 1
-
-            pos -= 1
-            cur.pop()
-
-        # If no prefix could be matched, try the smallest
-        # character greater than target[0].
-        if half_len > 0 and len(prefix) == 0:
-            first = ord(target[0]) - ord('a')
-
-            for c in range(first + 1, 26):
-                if half_cnt[c] == 0:
-                    continue
-
-                half = chr(ord('a') + c)
-
-                half_cnt[c] -= 1
-
-                for x in range(26):
-                    half += chr(ord('a') + x) * half_cnt[x]
-
-                candidate = build(half)
-
-                if candidate > target:
-                    return candidate
-
-                half_cnt[c] += 1
-
-        # n = 1
-        if half_len == 0:
-            candidate = middle
-            if candidate > target:
-                return candidate
+                remaining[c] += 1
 
         return ""
