@@ -1,6 +1,6 @@
 # 📝 3734. Lexicographically Smallest Palindromic Permutation Greater Than Target (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/?envType=daily-question&envId=2026-08-28)
+🔗 [Problem Link](https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
