@@ -9,7 +9,7 @@ Linked List
 
 ### 🚀 Performance
 - **Runtime:** 0 ms
-- **Memory:** 49 MB
+- **Memory:** 48.9 MB
 
 ---
 
