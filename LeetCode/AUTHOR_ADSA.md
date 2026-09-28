@@ -68,7 +68,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 ### 📂 Module  2.2: Parentheses & Bracket Patte
 - [ ] Valid Parentheses
 - [ ] Longest Valid Parentheses
-- [x] [Maximum Nesting Depth of the Parentheses](./Python/Medium/Maximum Nesting Depth of the Parentheses/)
+- [x] [Maximum Nesting Depth of the Parentheses](./Python/Easy/1737. Maximum Nesting Depth of the Parentheses/)
 - [ ] Remove Outermost Parentheses
 - [ ] Score of Parentheses
 - [ ] Minimum Add to Make Parentheses Valid
