@@ -39,7 +39,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Valid Parentheses
 - [ ] Min Stack
 - [ ] Evaluate Reverse Polish Notation
-- [x] [Generate Parentheses](./Python/Medium/22. Generate Parentheses/)
+- [x] [Generate Parentheses](./JavaScript/Medium/22. Generate Parentheses/)
 - [ ] Daily Temperatures
 - [ ] Car Fleet
 - [ ] Largest Rectangle in Histogram

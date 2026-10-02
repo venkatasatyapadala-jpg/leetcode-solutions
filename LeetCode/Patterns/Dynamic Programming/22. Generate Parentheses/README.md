@@ -1,15 +1,15 @@
 # 📝 22. Generate Parentheses (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/generate-parentheses/?envType=daily-question&envId=2026-10-02)
+🔗 [Problem Link](https://leetcode.com/problems/generate-parentheses/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-JavaScript-blue)
 
 ### 💡 Tags
 String, Dynamic Programming, Backtracking, Bracket Sequences
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 53.4 MB
 
 ---
 
