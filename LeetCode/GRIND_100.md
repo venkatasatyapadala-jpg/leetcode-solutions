@@ -77,7 +77,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Subsets
 - [ ] Combination Sum
 - [ ] Word Search
-- [x] [Generate Parentheses](./JavaScript/Medium/22. Generate Parentheses/)
+- [x] [Generate Parentheses](./Python/Medium/22. Generate Parentheses/)
 - [ ] Search a 2D Matrix
 - [ ] Search a 2D Matrix II
 - [ ] Search in Rotated Sorted Array

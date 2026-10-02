@@ -2,14 +2,14 @@
 
 🔗 [Problem Link](https://leetcode.com/problems/generate-parentheses/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-JavaScript-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Python-blue)
 
 ### 💡 Tags
 String, Dynamic Programming, Backtracking, Bracket Sequences
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
-- **Memory:** 53.4 MB
+- **Runtime:** 3 ms
+- **Memory:** 19.5 MB
 
 ---
 
