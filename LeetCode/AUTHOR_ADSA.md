@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 4 / 65 (6.2%)
+- **Completed:** 5 / 65 (7.7%)
 
 ---
 
@@ -69,7 +69,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Valid Parentheses
 - [ ] Longest Valid Parentheses
 - [x] [Maximum Nesting Depth of the Parentheses](./Python/Easy/1737. Maximum Nesting Depth of the Parentheses/)
-- [ ] Remove Outermost Parentheses
+- [x] [Remove Outermost Parentheses](./Python/Hard/Remove Outermost Parentheses/)
 - [x] [Score of Parentheses](./Python/Medium/886. Score of Parentheses/)
 - [x] [Minimum Add to Make Parentheses Valid](./C++/Medium/921. Minimum Add to Make Parentheses Valid/)
 - [ ] Minimum Remove to Make Valid Parentheses
