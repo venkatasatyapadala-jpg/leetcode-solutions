@@ -8,7 +8,7 @@
 Array, Two Pointers, Sorting, Quicksort, Bubble Sort
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
+- **Runtime:** 1 ms
 - **Memory:** 19.4 MB
 
 ---
