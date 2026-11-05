@@ -9,7 +9,7 @@ Array, Two Pointers, Binary Search, Sorting
 
 ### 🚀 Performance
 - **Runtime:** 7 ms
-- **Memory:** 46.9 MB
+- **Memory:** 46.5 MB
 
 ---
 
